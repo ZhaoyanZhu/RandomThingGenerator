@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<% if (locals.generate){ %>
+  <h1><%= generate %></h1>
+<% } else{ %>
+  <h1>Welcom To Random Thing Generator!</h1>
+<% } %>
+
+<form action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+
+<%- include("partials/footer.ejs") %>
